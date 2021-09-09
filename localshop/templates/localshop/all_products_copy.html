@@ -1,0 +1,98 @@
+{% extends "./base.html" %}
+{% load static %}
+{% block title %}OrganicMen's Store{% endblock %}
+
+    {% block content %}
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All Category</li>
+              <li data-filter=".filter-app">Shaving</li>
+              <li data-filter=".filter-card">Fragrances</li>
+              <li data-filter=".filter-web">Bath&Body</li>
+            </ul>
+          </div>
+        </div>
+
+      <div class="album py-5 bg-light">
+
+
+      <div class="pb-3 h5">{{ category.name|title }}</div>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+ {% for product in products %}
+            <div class="row portfolio-container">
+
+         
+            <div class="portfolio-wrap">
+              <img src="{{ product.image.url }}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>{{ product.title }}</h4>
+                <p>App</p>
+                <div class="portfolio-links">
+                  <a href="{{ product.image.url }}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+      
+
+
+
+
+
+
+
+
+
+       
+
+
+
+        {% endfor %}
+
+      
+  
+
+
+
+
+
+
+
+
+    {% endblock%}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
