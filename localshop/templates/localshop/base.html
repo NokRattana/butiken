@@ -1,128 +1,655 @@
 {% load static %}
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <title>{% block title %}OganicNews{% endblock %}</title>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-5JZPNH2C4Z"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-5JZPNH2C4Z');
-</script>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-     <!-- Favicons -->
-  <link href="../static/organic/assets/img/favicon.png" rel="icon">
-  <link href="../static/organic/assets/img/noklogo.png" rel="noklogo">
+  <title>Day Bootstrap Template - Index</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../static/assets/img/favicon.png" rel="icon">
+  <link href="../static/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="../static/assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="../static/assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="../static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="../static/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="../static/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="../static/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="../static/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="../static/organic/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="../static/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-   <link href="../static/assets/css/style.css" rel="stylesheet">
-   <link href="../static/assets/css/style2.css" rel="stylesheet">
-   <link href="../static/assets/css/style_dev.css" rel="stylesheet">
-    <link href="../static/css/style.css" rel="stylesheet">
-   <link href="../static/css/style2.css" rel="stylesheet">
-   <link href="../static/css/style_dev.css" rel="stylesheet">
+  <link href="../static/assets/css/style.css" rel="stylesheet">
 
+  <!-- =======================================================
+  * Template Name: Day - v4.3.0
+  * Template URL: https://bootstrapmade.com/day-multipurpose-html-template-for-free/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
 
-
-  </head>
-
-
-
-
-<!--End Fixed Navbar-->
-
-</header>
 <body>
+
+  <!-- ======= Top Bar ======= -->
+  <section id="topbar" class="d-flex align-items-center">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-envelope-fill"></i><a href="mailto:contact@example.com">info@oganicmanshop.com</a>
+        <i class="bi bi-phone-fill phone-icon"></i> +46 76 708 4561
+      </div>
+      <div class="social-links d-none d-md-block">
+        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+      </div>
+    </div>
+  </section>
+
   <!-- ======= Header ======= -->
-<header class="site-header sticky-top py-1 ">
-      <div class="Another Navbar"></div>
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
 
-  <div class="container bg-light">
-    <header class="d-flex justify-content-center py-3">
-      <ul class="nav nav-pills">
-        <li class="nav-item"><a href="" class="nav-link active bg-danger" aria-current="page">Home</a></li>
-        <li class="nav-item"><a href="{% url "localshop:all_products"%}" class="nav-link text-dark">WEBSTORE</a></li>
-        <li class="nav-item"><a href="" class="nav-link text-dark">PORTFOLIO</a></li>
-        <li class="nav-item"><a href="" class="nav-link text-dark">BLOG</a></li>
-        <li class="nav-item"><a href="" class="nav-link text-dark">STOCK PRICES</a></li>
-        <li class="nav-item"><a href="" class="nav-link text-dark">ABOUT</a></li>
-        <li class="nav-item dropdown">
+      <h1 class="logo"><a href="index.html">Organic Men's Shop</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+           <li class="dropdown"><a href="#"><span>Bath & Shower</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Shower</a></li>
+              <li><a href="#">Shampoo</a></li>
+              <li><a href="#">Diodorant</a></li>
+              <li><a href="#">Gift Set</a></li>
+              <li><a href="#">Others</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>Grooming</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Grooming kit</a></li>
+              <li><a href="#">Bread oils</a></li>
+              <li><a href="#">After shave</a></li>
+              <li><a href="#">Gift Setr</a></li>
+              <li><a href="#">Others</a></li>
+            </ul>
+          </li>
 
-        </li>
-      </ul>
-    </header>
-  </div>
+          <li class="dropdown"><a href="#"><span>Fragrances</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Versace</a></li>
+              <li><a href="#">Hugo Boss</a></li>
+              <li><a href="#">Tom Ford</a></li>
+              <li><a href="#">Dio</a></li>
+              <li><a href="#">Pago</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
 
+    </div>
   </header><!-- End Header -->
-{% block content %}
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container position-relative" data-aos="fade-up" data-aos-delay="500">
+      <h1>Spacial Discount 25%</h1>
+      <h2>Bath & Shower </h2>
+      <a href="#about" class="btn-get-started scrollto">Buy Now!</a>
+      
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left">
+            <img src="../static/assets/img/about.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right">
+            <h3>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</h3>
+            <p class="fst-italic">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua.
+            </p>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> Free Shipping.</li>
+              <li><i class="bi bi-check-circle"></i> Free Returns.</li>
+              <li><i class="bi bi-check-circle"></i> Fully Responsive.</li>
+            </ul>
+            <p>
+              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+              culpa qui officia deserunt mollit anim id est laborum
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-4" data-aos="fade-up">
+            <div class="box">
+            <img src="../static/assets/img/groomman.jpg" class="img-fluid" alt="">
+              <span>01</span>
+              <h4>Grooming</h4>
+              <p>Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et consectetur ducimus vero placeat</p>
+              
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="150">
+            <div class="box">
+              <span>02</span>
+              <h4>Bath & Shower</h4>
+              <p>Dolorem est fugiat occaecati voluptate velit esse. Dicta veritatis dolor quod et vel dire leno para dest</p>
+              <img src="../static/assets/img/bathbody.jpg" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
+            <div class="box">
+              <img src="../static/assets/img/fragrances.jpg" class="img-fluid" alt="">
+              <span>03</span>
+              <h4> Fragrances</h4>
+              <p>Molestiae officiis omnis illo asperiores. Aut doloribus vitae sunt debitis quo vel nam quis</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Why Us Section -->
+
+    <!-- ======= Clients Section ======= -->
+    <section id="clients" class="clients">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="row d-flex align-items-center">
+
+          <div class="col-lg-2 col-md-4 col-6">
+            <img src="../static/assets/img/clients/client-1.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6">
+            <img src="../static/assets/img/clients/client-2.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6">
+            <img src="../static/assets/img/clients/client-3.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6">
+            <img src="assets/img/clients/client-4.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6">
+            <img src="../static/assets/img/clients/client-5.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6">
+            <img src="../static/assets/img/clients/client-6.png" class="img-fluid" alt="">
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Clients Section -->
+
+    <!-- ======= Discount Section ======= -->
+    <section id="services" class="services">
+      <div class="container">
+
+        <div class="section-title">
+          <span>Services</span>
+          <h2>Discount 25% This month</h2>
+          <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p>
+         
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up">
+            <div class="icon-box">
+             <img src="../static/assets/img/fragrances.jpg" class="img-fluid" alt="">
+              <div class="icon"><i class="bx bxl-dribbble"></i></div>
+              <h4><a href="">Hogo Boss- Aftershave 200 ml</a></h4>
+              <p>Ordinary price : 350 sek</p>
+              <p>25% Discount</p>
+              <p>BUY NOW!</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="150">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-file"></i></div>
+              <h4><a href="">Manscapel Grooming Set</a></h4>
+              <p><p>Ordinary price : 550 sek</p>
+              <p>25% Discount</p>
+              <p>BUY NOW!</p>
+              <img src="../static/assets/img/discount-1.jpg" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon-box">
+            <img src="../static/assets/img/discount-3.jpg" class="img-fluid" alt="">
+              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <h4><a href="">Philip Multi Groom</a></h4>
+              <p><p>Ordinary price : 550 sek</p>
+              <p>25% Discount</p>
+              <p>BUY NOW!</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="fade-up" data-aos-delay="450">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-world"></i></div>
+              <h4><a href="">Brooklyn Breadcare set</a></h4>
+              <p><p>Ordinary price : 350 sek</p>
+              <p>25% Discount</p>
+              <p>BUY NOW!</p>
+               <img src="../static/assets/img/brooklyn.jpg" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="fade-up" data-aos-delay="600">
+            <div class="icon-box">
+            <img src="../static/assets/img/camden.jpg" class="img-fluid" alt="">
+              <div class="icon"><i class="bx bx-slideshow"></i></div>
+              <h4><a href="">Camden Breadcare set </a></h4>
+              <p><p><p>Ordinary price : 450 sek</p>
+              <p>25% Discount</p>
+              <p>BUY NOW!</p>.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="fade-up" data-aos-delay="750">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-arch"></i></div>
+              <h4><a href="">Sandalwood Chavingscream set</a></h4>
+              <p><p><p>Ordinary price : 350 sek</p>
+              <p>25% Discount</p>
+              <p>BUY NOW!</p>.</p>
+              <img src="../static/assets/img/shaving.jpg" class="img-fluid" alt="">
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Cta Section ======= -->
+    <section id="cta" class="cta">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="text-center">
+          <h3>New products every weeks!</h3>
+          <p> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged..</p>
+          <a class="cta-btn" href="#">Explore new catelog!</a>
+        </div>
+
+      </div>
+    </section><!-- End Cta Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+
+        <div class="section-title">
+          <span>Portfolio</span>
+          <h2>NEW PRODUCTS</h2>
+          <p>We have the largest collection of the new Product every months.</p>
+        </div>
+
+        <div class="row" data-aos="fade-up">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">Grooming</li>
+              <li data-filter=".filter-card">Bath & Shower</li>
+              <li data-filter=".filter-web">Fragrances</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="150">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="../static/assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Grooming 1</h4>
+              <p>Grooming</p>
+              <a href="../static/assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="../static/assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Fragrances 3</h4>
+              <p>Fragrances</p>
+              <a href="../static/assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="../static/assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Grooming 2</h4>
+              <p>Grooming</p>
+              <a href="../static/assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <img src="../static/assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Bath & Shower 2</h4>
+              <p>Bath & Shower</p>
+              <a href="../static/assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="../static/assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Fragrances 2</h4>
+              <p>Fragrances</p>
+              <a href="../static/assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <img src="../static/assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Grooming 3</h4>
+              <p>Grooming</p>
+              <a href="../static/assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <img src="../static/assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Bath & Shower 1</h4>
+              <p>Bath & Shower</p>
+              <a href="../static/assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <img src="../static/assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Bath & Shower 3</h4>
+              <p>Bath & Shower</p>
+              <a href="../static/assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="../static/assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Fragrances 3</h4>
+              <p>Fragrances</p>
+              <a href="../static/assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
+              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    
+                
 
 
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team">
+      <div class="container">
 
+        <div class="section-title">
+          <span>Team</span>
+          <h2>Fully Responsive</h2>
+          <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+        </div>
 
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in">
+            <div class="member">
+              <img src="../static/assets/img/banner13.png" alt="">
+              <h4>FREE SHIPPING</h4>
+              <span>OVER 500sex</span>
+              <p>
+                FREE SHIPPING ON ORDER OVER $100
+              </p>
+              
+            </div>
+          </div>
 
-{% endblock%}
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in">
+            <div class="member">
+              <img src="../static/assets/img/banner14.png" alt="">
+              <h4>FREE RETURN</h4>
+              <span>IN 24H</span>
+              <p>
+              FREE RETURN IN 24H AFTER PURCHASING
+              </p>
+              
+            </div>
+          </div>
 
-</div>
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in">
+            <div class="member">
+              <img src="../static/assets/img/banner15.png" alt="">
+              <h4>CALL TOLL FREE</h4>
+              <span>FREE</span>
+              <p>
+              CALL (01) 123 456 PB FOR FREE ORDERING
+              </p>
+             
+            </div>
+          </div>
 
+        </div>
 
+      </div>
+    </section><!-- End Team Section -->
 
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
 
+        <div class="section-title">
+          <span>Contact</span>
+          <h2>Contact</h2>
+          <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p>
+        </div>
 
+        <div class="row" data-aos="fade-up">
+          <div class="col-lg-6">
+            <div class="info-box mb-4">
+              <i class="bx bx-map"></i>
+              <h3>Our Address</h3>
+              <p>Ö.Vintergatan 9, 70344 SE</p>
+            </div>
+          </div>
 
+          <div class="col-lg-3 col-md-6">
+            <div class="info-box  mb-4">
+              <i class="bx bx-envelope"></i>
+              <h3>Email Us</h3>
+              <p>contact@organicmanshop.com</p>
+            </div>
+          </div>
 
+          <div class="col-lg-3 col-md-6">
+            <div class="info-box  mb-4">
+              <i class="bx bx-phone-call"></i>
+              <h3>Call Us</h3>
+              <p>+46 76 708 4561</p>
+            </div>
+          </div>
 
+        </div>
 
+        <div class="row" data-aos="fade-up">
 
+          <div class="col-lg-6 ">
+            <iframe class="mb-4 mb-lg-0" src="https://www.google.com/maps/place/V%C3%A4stra+Vintergatan+9,+703+44+%C3%96rebro/@59.2702036,15.1870226,17z/data=!3m1!4b1!4m5!3m4!1s0x465c14dc757dc2d3:0x6c61466d32f3aaab!8m2!3d59.2702036!4d15.1892113" frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe>
+          </div>
 
+          <div class="col-lg-6">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
 
+        </div>
 
+      </div>
+    </section><!-- End Contact Section -->
 
+  </main><!-- End #main -->
 
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
 
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-info">
+              <h3>oganicmanshop.com</h3>
+              <p>
+                V.Vintergatan 9 <br>
+                70344, se<br><br>
+                <strong>Phone:</strong> +46  76 708 4561<br>
+                <strong>Email:</strong> info@oganicmanshop.com<br>
+              </p>
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
 
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Infomations</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Blog</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Contact us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Page</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
 
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Brands</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Maya</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Andy on Pie</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Wonder G-U-Y</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Camden Barbershop</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Brooklyn Soap C.</a></li>
+            </ul>
+          </div>
 
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>New letter</h4>
+            <p>Get the latest updates on new products and upcoming sales</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
 
+          </div>
 
+        </div>
+      </div>
+    </div>
 
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Day</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/day-multipurpose-html-template-for-free/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
 
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
 
+  <!-- Vendor JS Files -->
+  <script src="../static/assets/vendor/aos/aos.js"></script>
+  <script src="../static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../static/assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../static/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../static/assets/vendor/php-email-form/validate.js"></script>
+  <script src="../static/assets/vendor/swiper/swiper-bundle.min.js"></script>
 
+  <!-- Template Main JS File -->
+  <script src="../static/assets/js/main.js"></script>
 
-    <!-- Optional JavaScript; choose one of the two! -->
-    <!-- Template Main JS File -->
-  <script src="../static/organic/assets/js/main.js"></script>
+</body>
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    -->
-  </body>
 </html>
-
